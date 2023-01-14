@@ -1,0 +1,107 @@
+body {
+  background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.left {
+  font-size: 30px;
+  font-weight: bold;
+}
+.getUsers {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 40px 100px;
+  overflow: hidden;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 220px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(230, 232, 237, 0.56);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  -webkit-animation: fadein 4s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.image {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.card_text {
+  margin-top: 5px;
+  text-align: center;
+  font-weight: "bold";
+  color: "black";
+}
+
+/* preloader */
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.container {
+  width: 40px;
+  margin: 70px auto;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.dot1 {
+  background-color: #1abc9c;
+  animation: jump-up 0.6s 0.1s linear infinite;
+}
+.dot2 {
+  background-color: #ffd64a;
+  animation: jump-up 0.6s 0.2s linear infinite;
+}
+.dot3 {
+  background-color: #e067af;
+  animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+@keyframes jump-up {
+  50% {
+    transform: translate(0, 15px);
+  }
+}
